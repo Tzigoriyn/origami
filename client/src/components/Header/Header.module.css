@@ -7,17 +7,4 @@
     top: 0;
     border-bottom: 2px solid #ffa000;
     border-top: 2px solid #ffa000;
-    position: fixed;
-}
-
-.navigation .listItem:not(:first-child) {
-    padding: 2%;
-    margin-top: 1.5%;
-    border-top: 2px solid #ffa000;
-}
-
-.navigation .listItem:hover {
-    border-top: none;
-    border-bottom: 2px solid #ffa000;
-    font-weight: bold;
 }

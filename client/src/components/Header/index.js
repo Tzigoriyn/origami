@@ -2,4 +2,4 @@
 
 // export default Header;
 
-export { defauly } from "./Header"
+export { default } from "./Header"
