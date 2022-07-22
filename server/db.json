@@ -1,0 +1,14 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "content": "Some short description",
+            "author": "Pesho Papurkin"
+        },
+        {
+            "id": 2,
+            "content": "Some short description for secon post",
+            "author": "Sefan Stevurkin"
+        }
+    ]
+}
