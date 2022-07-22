@@ -52,7 +52,7 @@ footer .listItem a {
     text-decoration: none;
 }
 
-nav .listItem, footer .listItem {
+/* nav .listItem, footer .listItem {
     display: inline-block;
     height: auto;
     margin-right: 2%;
@@ -60,7 +60,7 @@ nav .listItem, footer .listItem {
     padding: 0.5%;
     margin: 0.1%;
     vertical-align: top;
-}
+} */
 
 footer .listItem:nth-child(1) {
     margin-left: 1%;

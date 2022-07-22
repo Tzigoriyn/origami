@@ -2,13 +2,18 @@
     "posts": [
         {
             "id": 1,
-            "content": "Some short description",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dignissimos, dolor odio consectetur voluptates aperiam ducimus vitae omnis soluta atque ea doloribus, eligendi incidunt error ipsam officiis, quod nostrum sint. Non quibusdam mollitia ut laboriosam, voluptate dolor, aperiam, nisi ipsum esse necessitatibus assumenda! Provident est neque perspiciatis laboriosam labore commodi?",
             "author": "Pesho Papurkin"
         },
         {
             "id": 2,
-            "content": "Some short description for secon post",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dignissimos, dolor odio consectetur voluptates aperiam ducimus vitae omnis soluta atque ea doloribus, eligendi incidunt error ipsam officiis, quod nostrum sint. Non quibusdam mollitia ut laboriosam, voluptate dolor, aperiam, nisi ipsum esse necessitatibus assumenda! Provident est neque perspiciatis laboriosam labore commodi?",
             "author": "Sefan Stevurkin"
+        },
+        {
+            "id": 3,
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dignissimos, dolor odio consectetur voluptates aperiam ducimus vitae omnis soluta atque ea doloribus, eligendi incidunt error ipsam officiis, quod nostrum sint. Non quibusdam mollitia ut laboriosam, voluptate dolor, aperiam, nisi ipsum esse necessitatibus assumenda! Provident est neque perspiciatis laboriosam labore commodi?",
+            "author": "Ivana Ivankin"
         }
     ]
 }
