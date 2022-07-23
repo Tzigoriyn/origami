@@ -7,7 +7,7 @@ const Main = ({
 }) => {
     return (
         <main className={style.main}>
-            <h1>Soooooome heading</h1>
+            <h1 className={style.mainH1}>Soooooome heading</h1>
             {/* <Post className={style.Post} posts={posts} /> */}
 
             <div className={style.Posts}>
