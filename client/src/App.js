@@ -2,6 +2,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/jsx-no-comment-textnodes */
 import { Component } from "react"
+
+import { getAll } from "./services/getAll";
+
 import Header from "./components/Header";
 import Menu from "./components/Menu";
 import Main from "./components/Main";
@@ -26,6 +29,12 @@ class App extends Component {
   // constructor(props) {
   //   super(props);
   // }
+
+  componentDidMount() {
+    getAll()
+      .then(posts => console.log(posts))
+  }
+
   render() {
     return (
       <div className={style.app}>
