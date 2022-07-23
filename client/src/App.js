@@ -26,16 +26,22 @@ import style from './App.module.css';
 // }
 
 class App extends Component {
-  // constructor(props) {
-  //   super(props);
-  // }
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      posts: []
+    }
+  }
 
   componentDidMount() {
     getAll()
-      .then(posts => console.log(posts))
+      .then(posts =>
+        this.setState({ posts }));
   }
 
   render() {
+    console.log(this.state.posts);
     return (
       <div className={style.app}>
         <Header />
