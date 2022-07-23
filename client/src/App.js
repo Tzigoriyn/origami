@@ -4,6 +4,7 @@
 import { Component } from "react"
 
 import { getAll } from "./services/getAll";
+// import * as services from "./services/getAll" --> if we have more then one service in file!!!
 
 import Header from "./components/Header";
 import Menu from "./components/Menu";
@@ -35,13 +36,13 @@ class App extends Component {
   }
 
   componentDidMount() {
+    // services.getAll() --> if we have more then one service in file!!!
     getAll()
       .then(posts =>
         this.setState({ posts }));
   }
 
   render() {
-    console.log(this.state.posts);
     return (
       <div className={style.app}>
         <Header />
@@ -49,7 +50,7 @@ class App extends Component {
         <div className={style.container}>
           <Menu />
 
-          <Main />
+          <Main className={style.Posts} posts={this.state.posts} />
         </div>
 
       </div>

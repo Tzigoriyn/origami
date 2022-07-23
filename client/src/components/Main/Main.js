@@ -1,14 +1,25 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-undef */
+/* eslint-disable array-callback-return */
+import Post from "./Post"
 import style from './Main.module.css';
 
-const Main = () => {
+const Main = ({
+    posts
+}) => {
     return (
         <main className={style.main}>
             <h1>Soooooome heading</h1>
-            <p className="Post">Post place</p>
-        </main>
+            {/* <Post className={style.Post} posts={posts} /> */}
+
+            <div className={style.Posts}>
+                {posts.map(post =>
+                    <Post
+                        key={post.id}
+                        content={post.content}
+                        author={post.author}
+                    />
+                )}
+            </div>
+        </main >
     );
 }
 
