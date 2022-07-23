@@ -1,25 +1,31 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-// import { useState } from 'react';
-import MenuItem from './MenuItems';
+import { useState } from "react";
+import MenuItem from "./MenuItems";
+import { MENU_ITEMS } from "./menueConstans"
 
 import style from './Menu.module.css';
 
-const Menu = () => {
-    // const [currentItem, setCurrentItem] = useState();
+const Menu = ({
+    onMenuItemClick
+}) => {
+    const [currentItem, setCurrentItem] = useState();
+
+    const menuItemClickHandler = (id) => {
+        setCurrentItem(id);
+        onMenuItemClick(id);
+    }
 
     return (
-        <aside className={style.aside}>
-            <MenuItem>Going to 1</MenuItem>
-            <MenuItem>Going to 2</MenuItem>
-            <MenuItem>Going to 3</MenuItem>
-            <MenuItem>Going to 4</MenuItem>
-            <MenuItem>Going to 5</MenuItem>
-            <MenuItem>Going to 6</MenuItem>
-            <MenuItem>Going to 7</MenuItem>
-            <MenuItem>Going to 8</MenuItem>
-            <MenuItem>Going to 9</MenuItem>
-            <MenuItem>Going to 10</MenuItem>
-            <MenuItem>Going to 11</MenuItem>
+        <aside className={style.aside}>{
+            MENU_ITEMS.map(x =>
+                <MenuItem key={x.id}
+                    id={x.id}
+                    isSelected={x.id === currentItem}
+                    onClick={menuItemClickHandler}
+                >
+                    Going to {x.id}
+                </MenuItem>)
+        }
         </aside>
     );
 }
