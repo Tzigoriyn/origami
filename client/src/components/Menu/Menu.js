@@ -2,7 +2,6 @@
 import style from './Menu.module.css';
 
 const Menu = () => {
-    console.log("Ko stana s Menu");
     return (
         <aside className={style.aside}>
             <ul>
@@ -19,7 +18,7 @@ const Menu = () => {
                 <li className={style.listItem}><a href="#">Going to 11</a></li>
             </ul>
         </aside>
-    )
+    );
 }
 
 export default Menu;
