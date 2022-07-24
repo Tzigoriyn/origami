@@ -64,7 +64,7 @@ class App extends Component {
                 posts={this.getPost()}
               />
             </Route>
-            <Route className={style.Posts} path='/about' component={About} />
+            <Route className={style.Posts} path='/about/:name' render={About} />
             {/* <Route className={style.Posts} path='/contact-us' render={ContactUs} /> */}
             {/* <Route className={style.Posts} path='/contact-us' render={(props) => <h1>Costum Contact Us Page</h1>} /> */}
             <Route className={style.Posts} path='/contact-us' render={() => <ContactUs />} />
