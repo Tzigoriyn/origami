@@ -1,23 +1,25 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import style from "./Header.module.css";
 import Navigation from "./Navigation"
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
         <nav className={style.navigation}>
             <ul>
-                <Navigation><img src="white-origami-bird.png" alt="white origami" /></Navigation>
-                <Navigation>Going to 1</Navigation>
-                <Navigation>Going to 2</Navigation>
-                <Navigation>Going to 3</Navigation>
-                <Navigation>Going to 4</Navigation>
-                <Navigation>Going to 5</Navigation>
-                <Navigation>Going to 6</Navigation>
-                <Navigation>Going to 7</Navigation>
-                <Navigation>Going to 8</Navigation>
-                <Navigation>Going to 9</Navigation>
-                <Navigation>Going to 10</Navigation>
-                <Navigation>Going to 11</Navigation>
+                <Navigation><Link to="/"><img src="white-origami-bird.png" alt="white origami" /></Link></Navigation>
+                <Navigation><Link to="/">Home</Link></Navigation>
+                <Navigation><Link to="/about">About</Link></Navigation>
+                <Navigation><Link to="/contact-us">Contact us</Link></Navigation>
+                <Navigation><Link to="/">Going to 4</Link></Navigation>
+                <Navigation><Link to="/">Going to 5</Link></Navigation>
+                <Navigation><Link to="/">Going to 6</Link></Navigation>
+                <Navigation><Link to="/">Going to 7</Link></Navigation>
+                <Navigation><Link to="/">Going to 8</Link></Navigation>
+                <Navigation><Link to="/">Going to 9</Link></Navigation>
+                <Navigation><Link to="/">Going to 10</Link></Navigation>
+                <Navigation><Link to="/">Going to 11</Link></Navigation>
+                {/* <Link to="/about">Abouth</Link> */}
             </ul>
         </nav>
     );

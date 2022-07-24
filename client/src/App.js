@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-useless-constructor */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/jsx-no-comment-textnodes */
@@ -64,7 +65,10 @@ class App extends Component {
               />
             </Route>
             <Route className={style.Posts} path='/about' component={About} />
-            <Route className={style.Posts} path='/contact-us' component={ContactUs} />
+            {/* <Route className={style.Posts} path='/contact-us' render={ContactUs} /> */}
+            {/* <Route className={style.Posts} path='/contact-us' render={(props) => <h1>Costum Contact Us Page</h1>} /> */}
+            <Route className={style.Posts} path='/contact-us' render={() => <ContactUs />} />
+            <Route render={() => <h1>Error Page!</h1>} />
           </Switch>
         </div>
 
