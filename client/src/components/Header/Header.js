@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import style from "./Header.module.css";
-import Navigation from "./Navigation"
+import style from './Header.module.css';
+import Navigation from './Navigation';
 import { Link } from 'react-router-dom';
 
 const Header = () => {

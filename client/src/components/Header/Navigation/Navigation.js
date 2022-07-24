@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import style from "./Navigation.module.css";
+import style from './Navigation.module.css';
 
 const Navigation = (props) => {
     return (
