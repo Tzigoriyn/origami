@@ -57,14 +57,14 @@ class App extends Component {
           <Menu onMenuItemClick={this.onMenuItemClick} />
 
           <Switch>
-            <Route className={style.Posts} path='/about' component={About} />
-            <Route className={style.Posts} path='/contact-us' component={ContactUs} />
-            <Route path='/'>
+            <Route path='/' exact>
               <Main
                 className={style.Posts}
                 posts={this.getPost()}
               />
             </Route>
+            <Route className={style.Posts} path='/about' component={About} />
+            <Route className={style.Posts} path='/contact-us' component={ContactUs} />
           </Switch>
         </div>
 
