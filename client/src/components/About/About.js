@@ -1,7 +1,7 @@
 import style from '../Main/Main.module.css';
 
 // eslint-disable-next-line no-unused-vars
-// import { Redirect, useHistory, withRouter } from 'react-router-dom';
+import { Redirect, useHistory, withRouter, Switch, Route } from 'react-router-dom';
 
 const About = ({
     match,
@@ -32,6 +32,12 @@ const About = ({
     return (
         <main className={style.main}>
             <h1 className={style.mainH1}>About {match.params.name} Page</h1>
+
+            <Switch>
+                <Route path="/about/pesho">
+                    <h2>Pesho is a maniac!!!</h2>
+                </Route>
+            </Switch>
         </main>
     );
 }
